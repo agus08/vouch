@@ -13,7 +13,7 @@ const Chat = ({ location }) => {
     const [message, setMessage] = useState("");
     const [messages, setMessages] = useState([]);
 
-    const END_POINT = "";
+    const END_POINT = ""; //use localhost:5002 on debug
 
     useEffect(() => {
         let { username, roomId } = queryString.parse(location.search);

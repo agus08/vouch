@@ -9,11 +9,13 @@ const Join = () => {
     const [loading, setLoading] = useState(false)
     const [errorMsg, setErrorMsg] = useState("");
 
+    const END_POINT = ""; //use localhost:5002 on debug
+
     const joinRoom = async () => {
         setLoading(true);
 
         try {
-            const res = await fetch("http://localhost:5002/api/join", {
+            const res = await fetch(END_POINT + "/api/join", {
                 method: 'POST',
                 body: JSON.stringify({ roomId: room, username: name }),
                 headers: {
