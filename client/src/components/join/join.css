@@ -1,0 +1,42 @@
+.joinOuterContainer{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputList{
+    flex:1;
+    text-align: center;
+}
+
+.inputList p{
+    color:red
+}
+
+.inputGroup{
+    width: 480px;
+    margin-bottom: 10px;
+}
+
+.columnFooter{
+    padding-bottom: 16px;
+}
+
+.joinButton{
+    width: 480px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    background: #5DB075;
+    height: 50px;
+}
+
+.inputGroup input{
+    width: 100%;
+    padding-left: 16px;
+    border-radius: 8px;
+    border: 1px solid #E8E8E8;
+    background: #F6F6F6;
+    height: 50px;
+}
