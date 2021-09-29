@@ -28,8 +28,8 @@ const initApp = async () => {
     try {
         await mongoConnect();
         console.log("DB connection established");
-        httpServer.listen(process.env.HTTP_PORT, () => {
-            console.log(`HTTP Server listening on ${process.env.HTTP_PORT}`);
+        httpServer.listen(process.env.PORT, () => {
+            console.log(`HTTP Server listening on ${process.env.PORT}`);
         });
     } catch (e) {
         throw e;
